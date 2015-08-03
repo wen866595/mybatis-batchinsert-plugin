@@ -7,7 +7,6 @@ import java.util.Properties;
 import net.coderbee.mybatis.parameter.BatchInsertParameter;
 import net.coderbee.mybatis.util.ReflectHelper;
 
-import org.apache.ibatis.executor.parameter.DefaultParameterHandler;
 import org.apache.ibatis.executor.parameter.ParameterHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -16,6 +15,7 @@ import org.apache.ibatis.plugin.Intercepts;
 import org.apache.ibatis.plugin.Invocation;
 import org.apache.ibatis.plugin.Plugin;
 import org.apache.ibatis.plugin.Signature;
+import org.apache.ibatis.scripting.defaults.DefaultParameterHandler;
 
 /**
  * 用于绑定参数到 {@link java.sql.PreparedStatement} 的拦截器。<br/>
